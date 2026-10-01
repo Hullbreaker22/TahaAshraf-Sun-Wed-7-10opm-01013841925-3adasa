@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./assets/fonts/Tajawal-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./assets/fonts/Tajawal-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./assets/fonts/Tajawal-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('./assets/fonts/Tajawal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-tajawal: 'Tajawal', sans-serif;
+  --background-image-special: linear-gradient(to left, #ED5D0E, #F66E14);
+  --background-image-uniq: linear-gradient(to left, #F64B00, #F66E14);
+}
+
+body {
+  font-family: var(--font-tajawal);
+  
+}
+body::selection{
+  background-color: #F97316;
+  color: white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #202020;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d97706;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+.bg-grid-pattern {
+    background-size: 60px 60px;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+}
